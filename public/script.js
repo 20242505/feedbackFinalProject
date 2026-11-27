@@ -3,8 +3,8 @@
 // 1. CONFIGURACIÓN
 // ==========================================
 
-const API_URL = "/api/comentarios";
-const DEMO_MODE = true;
+const API_URL = "comentarios.php";
+const DEMO_MODE = false;
 
 let comentarios = [
     {
