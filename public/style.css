@@ -1,0 +1,68 @@
+
+body {
+    color: #17233b;
+}
+
+.main-container {
+    max-width: 850px;
+}
+
+.navbar-brand {
+    font-size: 26px;
+}
+
+.subtitle {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.form-control {
+    background-color: #f8fafc;
+    padding: 12px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    background-color: #e0eaff;
+    color: #0d6efd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.comment-card {
+    animation: aparecer 0.3s ease;
+}
+
+.comment-content {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .comment-card {
+        animation: none;
+    }
+}
